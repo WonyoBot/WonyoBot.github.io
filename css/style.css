@@ -1,0 +1,15 @@
+.ci
+{
+ text-align:center;
+ display:block;
+}
+
+.centerimage {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 687px;
+   height: 888px;
+   margin-top: -444px; /* Half the height */
+   margin-left: -343px; /* Half the width */
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>위 잉 치 킨</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	
+<script>
+	var _prevAudio = null;
+function playAudio() {
+	if (_prevAudio != null)
+		{
+			_prevAudio.pause();
+		}
+	var ranNum = parseInt((Math.random() * 100) % 6);
+	var myAudio = new Audio("sound/" + ranNum + ".mp3");
+	myAudio.play();
+	_prevAudio = myAudio;
+} 
+</script>
+	
+<p class="centerimage"><img src="centerImage.png" alt="워뇨!" onClick="playAudio()"></p>
+	
+<body>
+</body>
+</html>
